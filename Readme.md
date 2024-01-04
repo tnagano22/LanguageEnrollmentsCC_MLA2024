@@ -43,6 +43,7 @@ myColors <- brewer.pal(6,"BuGn")
 
 - From “Office of Institutional Research and Assessment 1967 - 1968 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Appendix IV: Ethnic Survey for Fall 1967 Extrapolation Of Total
     Enrollment Based on Data Collected From 86.7% Sample
   - Counts of matriculated students
@@ -75,6 +76,7 @@ head(tempData.1967)
 
 - From “Office of Institutional Research and Assessment 1969 - 1970 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table III: The Distribution of Students Based Upon the Type of
     College in Which They Were Enrolled (p.42)
   - Only proportions were reported in the report. The actual number of
@@ -106,6 +108,7 @@ head(tempData.1969)
 
 - From “Office of Institutional Research and Assessment 1972 - 1973 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Data from the ethnic survey in 1972
   - Table V Ethnic Distribution of Undergraduate Students by Type of
     College Expressed in Percentages 1968 - 1972 (p.42)
@@ -146,6 +149,7 @@ head(tempData.1972)
 
 - From “Office of Institutional Research and Assessment 1975 - 1976 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table IV: Ethnic Composition Of Undergraduate Students By
     Matriculation Status, Sentor & Community Colleges, Expressed in
     Percentages, Fall 1969-1975 (p.127)
@@ -187,6 +191,7 @@ head(tempData.1975)
 
 - From “Office of Institutional Research and Assessment 1977 - 1978 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table VI: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges Expressed in
     Percentages, Fall 1969, 1970, 1972, 1974, 1976, 1978, 1980 (p.111)
@@ -223,6 +228,7 @@ head(tempData.1977)
 
 - From “Office of Institutional Research and Assessment 1980 - 1981 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table IV: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges Expressed in
     Percentages, Fall 1969, 1970, 1972, 1974, 1976”, 1978, 1980 (p. 108)
@@ -260,6 +266,7 @@ head(tempData.1980)
 
 - From “Office of Institutional Research and Assessment 1981 - 1982 Data
   Book”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table IV: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges: Expressed In
     Percentages, Fall 1969, 1970, 1972, 1974, 19768, 1978, 1980 and 1981
@@ -300,6 +307,7 @@ head(tempData.1981)
 ## CUNY ethnicity data in 1992
 
 - From “CUNY Student Data Book Fall 1992”
+  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
   - Table 34. Trends in Enrollment by Race/Ethnicity of CUNY
     Undergraduates: 1976 to 1992 (p.121)
   - Only proportions were reported in the report. The actual number of
