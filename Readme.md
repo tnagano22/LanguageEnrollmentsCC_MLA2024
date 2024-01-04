@@ -3,7 +3,7 @@ RProcedureMLA2024CUNYMLEnrollmentAndDiversity
 - Tomonori Nagano
 - 2023-12-27
 - To analyze the diversity data and the modern language enrollment
-  trends at CUNY between 196x and 2021
+  trends at CUNY between 1967 and 2021
 
 ## Setting up the environment
 
