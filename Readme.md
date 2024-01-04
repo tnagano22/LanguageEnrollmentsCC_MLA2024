@@ -30,6 +30,11 @@ addComma<-function(x) {format(x, big.mark = ',', trim = TRUE, scientific = FALSE
 
 # creating a notin function
 `%notin%` <- Negate(`%in%`)
+
+# defining own color set
+library(RColorBrewer)
+# myColors <- c("green","lightblue","#FDAE61","#FEE090","#E0F3F8","#ABD9E9","#74ADD1","#4575B4","#313695","#FFFFBF","#FFFF99","#BEAED4","#FDC086","#1F78B4","#33A02C")
+myColors <- brewer.pal(6,"BuGn")
 ```
 
 ## Analyzing the CUNY’s diversity data
@@ -40,7 +45,7 @@ addComma<-function(x) {format(x, big.mark = ',', trim = TRUE, scientific = FALSE
   Book”
   - Appendix IV: Ethnic Survey for Fall 1967 Extrapolation Of Total
     Enrollment Based on Data Collected From 86.7% Sample
-  - only matriculated students
+  - Counts of matriculated students
   - The labeling of the following ethnicity levels have been modified.
     - “Negro” to “Black or African American” (see
       <https://www.pewresearch.org/social-trends/2010/01/21/race-and-the-census-the-negro-controversy/>
@@ -72,9 +77,9 @@ head(tempData.1967)
   Book”
   - Table III: The Distribution of Students Based Upon the Type of
     College in Which They Were Enrolled (p.42)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table I: Enrollment Fall 1964, 1968, 1969 on p.3)
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table I: Enrollment Fall 1964, 1968, 1969 on p.3)
   - The labeling of the following ethnicity levels have been modified.
     - “Black” to “Black or African American”
     - “Puerto Rican” to “Hispanic”
@@ -104,10 +109,10 @@ head(tempData.1969)
   - Data from the ethnic survey in 1972
   - Table V Ethnic Distribution of Undergraduate Students by Type of
     College Expressed in Percentages 1968 - 1972 (p.42)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table I The City University of New York Enrollment, Fall, 1968,
-    1971, 1972 on p.19)
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table I The City University of New York Enrollment,
+    Fall, 1968, 1971, 1972 on p.19)
   - The labeling of the following ethnicity levels have been modified.
     - “Puerto Rican” to “Hispanic”
     - “Black” to “Black or African American”
@@ -144,10 +149,11 @@ head(tempData.1972)
   - Table IV: Ethnic Composition Of Undergraduate Students By
     Matriculation Status, Sentor & Community Colleges, Expressed in
     Percentages, Fall 1969-1975 (p.127)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table IV: Trends In Undergraduate Matriculant & Non-Matriculant
-    Enrollment Expressed in Numbers & Percent–Fall 1970-1975 (p.115))
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table IV: Trends In Undergraduate Matriculant &
+    Non-Matriculant Enrollment Expressed in Numbers & Percent–Fall
+    1970-1975 (p.115))
   - The labeling of the following ethnicity levels have been modified.
     - “Puerto Rican” to “Hispanic”
     - “Black” to “Black or African American”
@@ -184,10 +190,10 @@ head(tempData.1975)
   - Table VI: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges Expressed in
     Percentages, Fall 1969, 1970, 1972, 1974, 1976, 1978, 1980 (p.111)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table III: Trends In Undergraduate Enrollment by Matriculant and
-    Non-Degree Status, Fall 1971, 1976 and 1977 (p.103))
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table III: Trends In Undergraduate Enrollment by
+    Matriculant and Non-Degree Status, Fall 1971, 1976 and 1977 (p.103))
   - The labeling of the following ethnicity levels have been modified.
     - “Black” to “Black or African American”
     - “American Indian” to “American Indian or Native Alaskan”
@@ -220,10 +226,11 @@ head(tempData.1977)
   - Table IV: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges Expressed in
     Percentages, Fall 1969, 1970, 1972, 1974, 1976”, 1978, 1980 (p. 108)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table III: Trends In Undergraduate Enrollment by Matriculants and
-    Non-Degree Status, Fall 1980, 1978, 1979, 1980 (p.100))
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table III: Trends In Undergraduate Enrollment by
+    Matriculants and Non-Degree Status, Fall 1980, 1978, 1979, 1980
+    (p.100))
   - The labeling of the following ethnicity levels have been modified.
     - “Black” to “Black or African American”
     - “American Indian” to “American Indian or Native Alaskan”
@@ -257,10 +264,10 @@ head(tempData.1980)
     Matriculation Status, Senior and Community Colleges: Expressed In
     Percentages, Fall 1969, 1970, 1972, 1974, 19768, 1978, 1980 and 1981
     (p.106)
-    - Only proportions were reported. The actual number of students were
-      interpolated from the total number of matriculated students (see
-      Table I: Trends in Enrollment Status By Sex Fall 1978, 1979, 1980,
-      1981 (p.96))
+    - Only proportions were reported in the report. The actual number of
+      students were interpolated from the total number of matriculated
+      students (see Table I: Trends in Enrollment Status By Sex Fall
+      1978, 1979, 1980, 1981 (p.96))
   - The enrollment data for 1978 and 1979 differ from those previously
     reported in the Data Book since these years have been adjusted to
     include New York City Technical College and the College of Staten
@@ -295,10 +302,10 @@ head(tempData.1981)
 - From “CUNY Student Data Book Fall 1992”
   - Table 34. Trends in Enrollment by Race/Ethnicity of CUNY
     Undergraduates: 1976 to 1992 (p.121)
-  - Only proportions were reported. The actual number of students were
-    interpolated from the total number of matriculated students (see
-    Table 10B. Trends in Undergraduate Enrolment by Colege: 1980 to 1992
-    (p.52))
+  - Only proportions were reported in the report. The actual number of
+    students were interpolated from the total number of matriculated
+    students (see Table 10B. Trends in Undergraduate Enrolment by
+    Colege: 1980 to 1992 (p.52))
 
 ``` r
 tempData.1992 = read.csv("data/CUNY_OIRA2023StudentDataBookEnrollmentByDegreeAndEthnicity1992.csv", sep = ",")
@@ -323,6 +330,7 @@ head(tempData.1992)
 - Data from CUNY’s Office of Institutional Research
   - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
   - <https://public.tableau.com/app/profile/oira.cuny/viz/StudentDataBook/Enrollment>
+  - Tableau
     - Select year in “Select Year”
     - “Enrollment Drilldown”
     - For “Bottom Column Header”, choose “Degree Pursued Level”
@@ -351,6 +359,7 @@ head(tempData.2022)
 - “Other” and “No Response” were removed
 
 ``` r
+# creating data tables
 tempData = bind_rows(tempData.1967, tempData.1969, tempData.1972, tempData.1975, tempData.1977, tempData.1980, tempData.1981, tempData.1992, tempData.2022)
 
 xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)[,,"Community"]
@@ -518,6 +527,8 @@ xtabs(Enrollment ~ Year + Control, data=tempData)
 tempData = tempData[tempData$Ethnicity %notin% c("Other","No Response"),]
 ```
 
+- Plotting diversity data at CUNY community colleges
+
 ``` r
 CUNY.diversity = xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)
 CUNY.diveristy.2y = as.data.frame(CUNY.diversity[,,"Community"])
@@ -527,19 +538,19 @@ colnames(CUNY.diveristy.2y) <- c("Ethnicity","Year","Enrollment")
 p <- ggplot(CUNY.diveristy.2y, aes(Year, Enrollment, group = Ethnicity)) + 
     geom_point(aes(color=Ethnicity), size=2.5) + 
   scale_shape_manual(values = c(0,1)) +
-  scale_color_brewer(palette = "Spectral") +
+#  scale_color_brewer(palette = "Spectral") +
   geom_line(aes(color=Ethnicity)) + 
-    geom_text(aes(label=paste(addComma(Enrollment),sep="")), position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, size=2.75, data=CUNY.diveristy.2y[as.integer(CUNY.diveristy.2y$Year) %% 3 == 1,])
+    geom_text(aes(label=paste(addComma(Enrollment),sep="")), position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, hjust=-0.01, size=2.75, data=CUNY.diveristy.2y[as.integer(CUNY.diveristy.2y$Year) %% 3 == 1,])
 
 # using ggplot theme and modifying axis labels
 p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
   ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Community Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(2,2,2,2), "cm")) +
+  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
   theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -547,44 +558,7 @@ p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
 #  legend.key.width = unit(1, 'cm'), #change legend key width
 #  legend.title = element_text(size=12), #change legend title font size
 #  legend.text = element_text(size=8)) #change legend text font size
-ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity2Y1967_2022.pdf", width = 12, height = 9)
-```
-
-### Plotting the data for senior colleges
-
-- “Other” and “No Response” were removed
-
-``` r
-tempData = tempData[tempData$Ethnicity %notin% c("Other","No Response"),]
-CUNY.diversity = xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)
-# plotting data
-
-CUNY.diveristy.4y = as.data.frame(CUNY.diversity[,,"Senior"])
-colnames(CUNY.diveristy.4y) <- c("Ethnicity","Year","Enrollment")
-p <- ggplot(CUNY.diveristy.4y, aes(Year, Enrollment, group = Ethnicity)) + 
-    geom_point(aes(color=Ethnicity), size=2.5) + 
-  scale_shape_manual(values = c(0,1)) +
-  scale_color_brewer(palette = "Spectral") +
-  geom_line(aes(color=Ethnicity)) + 
-    geom_text(aes(label=paste(addComma(Enrollment),sep="")), position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, size=2.75, data=CUNY.diveristy.4y[as.integer(CUNY.diveristy.4y$Year) %% 3 == 1,])
-
-# using ggplot theme and modifying axis labels
-p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
-  theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
-  ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Senior Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(2,2,2,2), "cm")) +
-  theme(axis.title.x = element_text(margin=margin(t=10)))
-```
-
-<img src="files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
-
-``` r
-#  theme(legend.key.size = unit(1, 'cm'), #change legend key size
-#  legend.key.height = unit(1, 'cm'), #change legend key height
-#  legend.key.width = unit(1, 'cm'), #change legend key width
-#  legend.title = element_text(size=12), #change legend title font size
-#  legend.text = element_text(size=8)) #change legend text font size
-ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity4Y1967_2022.pdf", width = 12, height = 9)
+ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity2Y1967_2022.pdf", width = 12, height = 8)
 ```
 
 - Simplified plot for community colleges
@@ -599,7 +573,7 @@ colnames(CUNY.diveristy.simplified.2y) <- c("Ethnicity","Year","Enrollment")
 p <- ggplot(CUNY.diveristy.simplified.2y, aes(Year, Enrollment, group = Ethnicity)) + 
     geom_point(aes(color=Ethnicity), size=2.5) + 
   scale_shape_manual(values = c(0,1)) +
-  scale_color_brewer(palette = "Spectral") +
+#  scale_color_brewer(palette = "Spectral") +
   geom_line(aes(color=Ethnicity)) + 
     geom_text(aes(label=paste(addComma(Enrollment),sep="")), position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, size=2.75, data=CUNY.diveristy.simplified.2y[as.integer(CUNY.diveristy.simplified.2y$Year) %% 3 == 1,])
 
@@ -607,11 +581,11 @@ p <- ggplot(CUNY.diveristy.simplified.2y, aes(Year, Enrollment, group = Ethnicit
 p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
   ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Community Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(2,2,2,2), "cm")) +
+  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
   theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
+<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -619,7 +593,41 @@ p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
 #  legend.key.width = unit(1, 'cm'), #change legend key width
 #  legend.title = element_text(size=12), #change legend title font size
 #  legend.text = element_text(size=8)) #change legend text font size
-ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity2Y1967_2022Simplified.pdf", width = 12, height = 9)
+ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity2Y1967_2022Simplified.pdf", width = 12, height = 8)
+```
+
+### Plotting the data for senior colleges
+
+- Plotting diversity data at CUNY community colleges
+
+``` r
+# plotting data
+CUNY.diveristy.4y = as.data.frame(CUNY.diversity[,,"Senior"])
+colnames(CUNY.diveristy.4y) <- c("Ethnicity","Year","Enrollment")
+p <- ggplot(CUNY.diveristy.4y, aes(Year, Enrollment, group = Ethnicity)) + 
+    geom_point(aes(color=Ethnicity), size=2.5) + 
+  scale_shape_manual(values = c(0,1)) +
+#  scale_color_brewer(palette = "Spectral") +
+  geom_line(aes(color=Ethnicity)) + 
+    geom_text(aes(label=paste(addComma(Enrollment),sep="")), position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, hjust=-0.01, size=2.75, data=CUNY.diveristy.4y[as.integer(CUNY.diveristy.4y$Year) %% 3 == 1,])
+
+# using ggplot theme and modifying axis labels
+p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
+  theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
+  ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Senior Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
+  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+  theme(axis.title.x = element_text(margin=margin(t=10)))
+```
+
+<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
+
+``` r
+#  theme(legend.key.size = unit(1, 'cm'), #change legend key size
+#  legend.key.height = unit(1, 'cm'), #change legend key height
+#  legend.key.width = unit(1, 'cm'), #change legend key width
+#  legend.title = element_text(size=12), #change legend title font size
+#  legend.text = element_text(size=8)) #change legend text font size
+ggsave("data/CUNYMLEnrollmentAndDiversityPlotEthnicity4Y1967_2022.pdf", width = 12, height = 8)
 ```
 
 ## Analyzing the MLA’s Enrollment Survey
@@ -675,13 +683,56 @@ MLA.CUNY.e <- tapply(MLA.CUNY$UG.TOTAL, list(MLA.CUNY$UNIV, MLA.CUNY$YR.TERM, ML
 MLA.CUNY.e3 <- tapply(MLA.CUNY$UG.TOTAL, list(MLA.CUNY$UNIV, MLA.CUNY$YR.TERM),sum, na.rm=TRUE)
 ```
 
+- Plotting the modern language enrollment data at CUNY
+
+``` r
+# selecting community colleges and senior colleges
+CUNYCCIndex = c("BMCC", "Hostos C", "BCC", "Kingsborough C", "LaGuardia C", "Queensborough C")
+CUNYSCIndex = c("Baruch","Brooklyn","CSI", "City", "Hunter", "John Jay", "Lehman", "Medger Evers", "CityTech", "Queens", "York")
+```
+
 - Plotting the modern language enrollment data
 
 ``` r
-# plotting data
-CUNYCCIndex = c("BMCC", "Hostos C", "BCC", "Kingsborough C", "LaGuardia C", "Queensborough C")
-CUNYSCIndex = c("Baruch","Brooklyn","CSI", "City", "Hunter", "John Jay", "Lehman", "Medger Evers", "CityTech", "Queens", "York")
+tempData = melt(MLA.CUNY.e3)
+colnames(tempData) <- c("Institution","Year","Enrollment")
+tempData[tempData$Institution %in% CUNYCCIndex,"Control"] = "Community College"
+tempData[tempData$Institution %in% CUNYSCIndex,"Control"] = "Senior College"
 
+tempData[is.na(tempData$Enrollment),"Enrollment"] <- 0
+
+tempData <- melt(tapply(tempData$Enrollment, list(tempData$Year,tempData$Control),sum, na.rm=TRUE))
+colnames(tempData) <- c("Year","Control","Enrollment")
+
+p <- ggplot(tempData, aes(Year, Enrollment, group = Control)) + 
+  geom_point(aes(color=Control), size=2.5) + 
+#  scale_shape_manual(values = c(0,1)) +
+#  scale_color_brewer(palette = "PuOr") +
+  geom_line(aes(color=Control)) + 
+    geom_text(aes(label=paste(addComma(Enrollment),sep="")), 
+        position=position_dodge2(width=0.1, preserve="single", padding=5), vjust=2, size=2.75)
+
+  # using ggplot theme and modifying axis labels
+p + theme_hc() + scale_fill_identity() + # + scale_colour_hc() +
+  theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
+    ggtitle(paste("Modern Language Enrollments at CUNY by Control between 1958 and 2021\n(Data from MLA's Language Enrollment Database, 1958–2021)")) +
+    theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+    theme(axis.title.x = element_text(margin=margin(t=10)))
+```
+
+<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
+
+``` r
+#  theme(legend.key.size = unit(1, 'cm'), #change legend key size
+#    legend.key.height = unit(1, 'cm'), #change legend key height
+#    legend.key.width = unit(1, 'cm'), #change legend key width
+#    legend.title = element_text(size=12), #change legend title font size
+#    legend.text = element_text(size=8)) #change legend text font size
+ggsave(paste("data/CUNYMLEnrollmentMLAEnrollmentSurvey2023CCAndSC.pdf",sep=""), width = 11, height = 7)
+```
+
+``` r
+# plotting data
 tempData = melt(MLA.CUNY.e3[CUNYCCIndex,])
 colnames(tempData) <- c("Institution","Year","Enrollment")
 tempData[is.na(tempData$Enrollment),"Enrollment"] <- 0
@@ -701,7 +752,7 @@ p + theme_hc() + scale_fill_identity() + # + scale_colour_hc() +
     theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="files/figure-gfm/unnamed-chunk-17-1.png" style="display: block; margin: auto;" />
+<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
