@@ -1,0 +1,331 @@
+Year,Control,Ethnicity,Enrollment
+1990,Community,American Indian or Native Alaskan,139
+1990,Community,Asian or Pacific Islander,5018
+1990,Community,Black,20620
+1990,Community,Hispanic,17198
+1990,Community,White,17702
+1990,Senior,American Indian or Native Alaskan,275
+1990,Senior,Asian or Pacific Islander,12947
+1990,Senior,Black,35438
+1990,Senior,Hispanic,20701
+1990,Senior,White,44127
+1991,Community,American Indian or Native Alaskan,123
+1991,Community,Asian or Pacific Islander,5631
+1991,Community,Black,21253
+1991,Community,Hispanic,17646
+1991,Community,White,17846
+1991,Senior,American Indian or Native Alaskan,231
+1991,Senior,Asian or Pacific Islander,13281
+1991,Senior,Black,34894
+1991,Senior,Hispanic,20833
+1991,Senior,White,42525
+1992,Community,American Indian or Native Alaskan,112
+1992,Community,Asian or Pacific Islander,5789
+1992,Community,Black,22109
+1992,Community,Hispanic,18206
+1992,Community,White,17499
+1992,Senior,American Indian or Native Alaskan,224
+1992,Senior,Asian or Pacific Islander,13794
+1992,Senior,Black,36143
+1992,Senior,Hispanic,21791
+1992,Senior,White,41114
+1993,Community,American Indian or Native Alaskan,105
+1993,Community,Asian or Pacific Islander,6174
+1993,Community,Black,23119
+1993,Community,Hispanic,19625
+1993,Community,White,17992
+1993,Senior,American Indian or Native Alaskan,234
+1993,Senior,Asian or Pacific Islander,14341
+1993,Senior,Black,36607
+1993,Senior,Hispanic,23082
+1993,Senior,White,40050
+1994,Community,American Indian or Native Alaskan,141
+1994,Community,Asian or Pacific Islander,7111
+1994,Community,Black,31089
+1994,Community,Hispanic,23628
+1994,Community,White,19290
+1994,Senior,American Indian or Native Alaskan,160
+1994,Senior,Asian or Pacific Islander,12589
+1994,Senior,Black,25718
+1994,Senior,Hispanic,19854
+1994,Senior,White,29930
+1995,Community,American Indian or Native Alaskan,140
+1995,Community,Asian or Pacific Islander,7249
+1995,Community,Black,29233
+1995,Community,Hispanic,23534
+1995,Community,White,17986
+1995,Senior,American Indian or Native Alaskan,154
+1995,Senior,Asian or Pacific Islander,12473
+1995,Senior,Black,25009
+1995,Senior,Hispanic,19698
+1995,Senior,White,29142
+1996,Community,American Indian or Native Alaskan,114
+1996,Community,Asian or Pacific Islander,7461
+1996,Community,Black,29201
+1996,Community,Hispanic,24694
+1996,Community,White,17391
+1996,Senior,American Indian or Native Alaskan,130
+1996,Senior,Asian or Pacific Islander,12242
+1996,Senior,Black,24859
+1996,Senior,Hispanic,19440
+1996,Senior,White,28498
+1997,Community,American Indian or Native Alaskan,128
+1997,Community,Asian or Pacific Islander,7590
+1997,Community,Black,27914
+1997,Community,Hispanic,23820
+1997,Community,White,16208
+1997,Senior,American Indian or Native Alaskan,135
+1997,Senior,Asian or Pacific Islander,11905
+1997,Senior,Black,24946
+1997,Senior,Hispanic,19486
+1997,Senior,White,28391
+1998,Community,American Indian or Native Alaskan,128
+1998,Community,Asian or Pacific Islander,8104
+1998,Community,Black,26951
+1998,Community,Hispanic,23215
+1998,Community,White,16248
+1998,Senior,American Indian or Native Alaskan,142
+1998,Senior,Asian or Pacific Islander,11827
+1998,Senior,Black,24185
+1998,Senior,Hispanic,18816
+1998,Senior,White,27494
+1999,Community,American Indian or Native Alaskan,147
+1999,Community,Asian or Pacific Islander,8399
+1999,Community,Black,26004
+1999,Community,Hispanic,22087
+1999,Community,White,15537
+1999,Senior,American Indian or Native Alaskan,133
+1999,Senior,Asian or Pacific Islander,11860
+1999,Senior,Black,23937
+1999,Senior,Hispanic,18513
+1999,Senior,White,27130
+2000,Community,American Indian or Native Alaskan,143
+2000,Community,Asian or Pacific Islander,8865
+2000,Community,Black,26067
+2000,Community,Hispanic,22180
+2000,Community,White,15469
+2000,Senior,American Indian or Native Alaskan,135
+2000,Senior,Asian or Pacific Islander,12113
+2000,Senior,Black,23135
+2000,Senior,Hispanic,18340
+2000,Senior,White,26581
+2001,Community,American Indian or Native Alaskan,131
+2001,Community,Asian or Pacific Islander,9094
+2001,Community,Black,26197
+2001,Community,Hispanic,22157
+2001,Community,White,15503
+2001,Senior,American Indian or Native Alaskan,128
+2001,Senior,Asian or Pacific Islander,12807
+2001,Senior,Black,23100
+2001,Senior,Hispanic,18367
+2001,Senior,White,27142
+2002,Community,American Indian or Native Alaskan,131
+2002,Community,Asian or Pacific Islander,9496
+2002,Community,Black,28185
+2002,Community,Hispanic,23523
+2002,Community,White,16973
+2002,Senior,American Indian or Native Alaskan,154
+2002,Senior,Asian or Pacific Islander,13291
+2002,Senior,Black,23255
+2002,Senior,Hispanic,18781
+2002,Senior,White,28335
+2003,Community,American Indian or Native Alaskan,104
+2003,Community,Asian or Pacific Islander,9779
+2003,Community,Black,28133
+2003,Community,Hispanic,23671
+2003,Community,White,17201
+2003,Senior,American Indian or Native Alaskan,144
+2003,Senior,Asian or Pacific Islander,13984
+2003,Senior,Black,23153
+2003,Senior,Hispanic,19865
+2003,Senior,White,29647
+2004,Community,American Indian or Native Alaskan,119
+2004,Community,Asian or Pacific Islander,10054
+2004,Community,Black,29431
+2004,Community,Hispanic,24705
+2004,Community,White,17719
+2004,Senior,American Indian or Native Alaskan,157
+2004,Senior,Asian or Pacific Islander,14749
+2004,Senior,Black,23628
+2004,Senior,Hispanic,20934
+2004,Senior,White,30052
+2005,Community,American Indian or Native Alaskan,140
+2005,Community,Asian or Pacific Islander,10380
+2005,Community,Black,29057
+2005,Community,Hispanic,25351
+2005,Community,White,17627
+2005,Senior,American Indian or Native Alaskan,158
+2005,Senior,Asian or Pacific Islander,15580
+2005,Senior,Black,23997
+2005,Senior,Hispanic,21395
+2005,Senior,White,30522
+2006,Community,American Indian or Native Alaskan,150
+2006,Community,Asian or Pacific Islander,11265
+2006,Community,Black,28789
+2006,Community,Hispanic,26193
+2006,Community,White,17769
+2006,Senior,American Indian or Native Alaskan,158
+2006,Senior,Asian or Pacific Islander,16770
+2006,Senior,Black,24443
+2006,Senior,Hispanic,22394
+2006,Senior,White,31128
+2007,Community,American Indian or Native Alaskan,168
+2007,Community,Asian or Pacific Islander,12194
+2007,Community,Black,28137
+2007,Community,Hispanic,27814
+2007,Community,White,18015
+2007,Senior,American Indian or Native Alaskan,153
+2007,Senior,Asian or Pacific Islander,18200
+2007,Senior,Black,25016
+2007,Senior,Hispanic,23631
+2007,Senior,White,32053
+2008,Community,American Indian or Native Alaskan,194
+2008,Community,Asian or Pacific Islander,13239
+2008,Community,Black,29366
+2008,Community,Hispanic,30048
+2008,Community,White,17713
+2008,Senior,American Indian or Native Alaskan,184
+2008,Senior,Asian or Pacific Islander,19976
+2008,Senior,Black,25242
+2008,Senior,Hispanic,25456
+2008,Senior,White,33324
+2009,Community,American Indian or Native Alaskan,313
+2009,Community,Asian or Pacific Islander,14405
+2009,Community,Black,31978
+2009,Community,Hispanic,33671
+2009,Community,White,18910
+2009,Senior,American Indian or Native Alaskan,186
+2009,Senior,Asian or Pacific Islander,21370
+2009,Senior,Black,25414
+2009,Senior,Hispanic,26472
+2009,Senior,White,34898
+2010,Community,American Indian or Native Alaskan,363
+2010,Community,Asian or Pacific Islander,14790
+2010,Community,Black,32120
+2010,Community,Hispanic,34927
+2010,Community,White,18268
+2010,Senior,American Indian or Native Alaskan,220
+2010,Senior,Asian or Pacific Islander,22856
+2010,Senior,Black,24678
+2010,Senior,Hispanic,26664
+2010,Senior,White,35651
+2011,Community,American Indian or Native Alaskan,317
+2011,Community,Asian or Pacific Islander,15357
+2011,Community,Black,33522
+2011,Community,Hispanic,37001
+2011,Community,White,18793
+2011,Senior,American Indian or Native Alaskan,233
+2011,Senior,Asian or Pacific Islander,24769
+2011,Senior,Black,25315
+2011,Senior,Hispanic,27154
+2011,Senior,White,37157
+2012,Community,American Indian or Native Alaskan,329
+2012,Community,Asian or Pacific Islander,15501
+2012,Community,Black,32185
+2012,Community,Hispanic,37126
+2012,Community,White,17707
+2012,Senior,American Indian or Native Alaskan,239
+2012,Senior,Asian or Pacific Islander,26075
+2012,Senior,Black,25034
+2012,Senior,Hispanic,27685
+2012,Senior,White,36825
+2013,Community,American Indian or Native Alaskan,326
+2013,Community,Asian or Pacific Islander,15588
+2013,Community,Black,32137
+2013,Community,Hispanic,38699
+2013,Community,White,16973
+2013,Senior,American Indian or Native Alaskan,284
+2013,Senior,Asian or Pacific Islander,26961
+2013,Senior,Black,24825
+2013,Senior,Hispanic,28083
+2013,Senior,White,35167
+2014,Community,American Indian or Native Alaskan,372
+2014,Community,Asian or Pacific Islander,16058
+2014,Community,Black,33007
+2014,Community,Hispanic,39569
+2014,Community,White,16775
+2014,Senior,American Indian or Native Alaskan,306
+2014,Senior,Asian or Pacific Islander,28113
+2014,Senior,Black,25444
+2014,Senior,Hispanic,29514
+2014,Senior,White,34631
+2015,Community,American Indian or Native Alaskan,401
+2015,Community,Asian or Pacific Islander,15922
+2015,Community,Black,32251
+2015,Community,Hispanic,39241
+2015,Community,White,15567
+2015,Senior,American Indian or Native Alaskan,335
+2015,Senior,Asian or Pacific Islander,29460
+2015,Senior,Black,26475
+2015,Senior,Hispanic,30973
+2015,Senior,White,32697
+2016,Community,American Indian or Native Alaskan,412
+2016,Community,Asian or Pacific Islander,15861
+2016,Community,Black,31017
+2016,Community,Hispanic,38707
+2016,Community,White,14839
+2016,Senior,American Indian or Native Alaskan,338
+2016,Senior,Asian or Pacific Islander,30266
+2016,Senior,Black,26608
+2016,Senior,Hispanic,32271
+2016,Senior,White,31156
+2017,Community,American Indian or Native Alaskan,399
+2017,Community,Asian or Pacific Islander,15530
+2017,Community,Black,30002
+2017,Community,Hispanic,38318
+2017,Community,White,14324
+2017,Senior,American Indian or Native Alaskan,356
+2017,Senior,Asian or Pacific Islander,31155
+2017,Senior,Black,26843
+2017,Senior,Hispanic,34078
+2017,Senior,White,30791
+2018,Community,American Indian or Native Alaskan,411
+2018,Community,Asian or Pacific Islander,15262
+2018,Community,Black,29445
+2018,Community,Hispanic,36516
+2018,Community,White,13956
+2018,Senior,American Indian or Native Alaskan,364
+2018,Senior,Asian or Pacific Islander,32158
+2018,Senior,Black,27164
+2018,Senior,Hispanic,35471
+2018,Senior,White,30222
+2019,Community,American Indian or Native Alaskan,385
+2019,Community,Asian or Pacific Islander,14688
+2019,Community,Black,28632
+2019,Community,Hispanic,33653
+2019,Community,White,12983
+2019,Senior,American Indian or Native Alaskan,375
+2019,Senior,Asian or Pacific Islander,32497
+2019,Senior,Black,27961
+2019,Senior,Hispanic,35699
+2019,Senior,White,29816
+2020,Community,American Indian or Native Alaskan,373
+2020,Community,Asian or Pacific Islander,13570
+2020,Community,Black,25790
+2020,Community,Hispanic,29708
+2020,Community,White,11520
+2020,Senior,American Indian or Native Alaskan,371
+2020,Senior,Asian or Pacific Islander,32913
+2020,Senior,Black,27878
+2020,Senior,Hispanic,35359
+2020,Senior,White,30280
+2021,Community,American Indian or Native Alaskan,333
+2021,Community,Asian or Pacific Islander,11840
+2021,Community,Black,23089
+2021,Community,Hispanic,24793
+2021,Community,White,9726
+2021,Senior,American Indian or Native Alaskan,394
+2021,Senior,Asian or Pacific Islander,31944
+2021,Senior,Black,26826
+2021,Senior,Hispanic,33819
+2021,Senior,White,28690
+2022,Community,American Indian or Native Alaskan,278
+2022,Community,Asian or Pacific Islander,10358
+2022,Community,Black,21162
+2022,Community,Hispanic,21606
+2022,Community,White,7995
+2022,Senior,American Indian or Native Alaskan,363
+2022,Senior,Asian or Pacific Islander,30764
+2022,Senior,Black,24833
+2022,Senior,Hispanic,31074
+2022,Senior,White,25786
