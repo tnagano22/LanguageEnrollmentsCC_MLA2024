@@ -43,7 +43,7 @@ myColors <- brewer.pal(6,"BuGn")
 
 - From “Office of Institutional Research and Assessment 1967 - 1968 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
+  (<https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>)
   - Appendix IV: Ethnic Survey for Fall 1967 Extrapolation Of Total
     Enrollment Based on Data Collected From 86.7% Sample
   - Counts of matriculated students
@@ -76,7 +76,7 @@ head(tempData.1967)
 
 - From “Office of Institutional Research and Assessment 1969 - 1970 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
+  (<https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>)
   - Table III: The Distribution of Students Based Upon the Type of
     College in Which They Were Enrolled (p.42)
   - Only proportions were reported in the report. The actual number of
@@ -108,7 +108,7 @@ head(tempData.1969)
 
 - From “Office of Institutional Research and Assessment 1972 - 1973 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
+  (<https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>)
   - Data from the ethnic survey in 1972
   - Table V Ethnic Distribution of Undergraduate Students by Type of
     College Expressed in Percentages 1968 - 1972 (p.42)
@@ -149,7 +149,7 @@ head(tempData.1972)
 
 - From “Office of Institutional Research and Assessment 1975 - 1976 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
+  - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
   - Table IV: Ethnic Composition Of Undergraduate Students By
     Matriculation Status, Sentor & Community Colleges, Expressed in
     Percentages, Fall 1969-1975 (p.127)
@@ -191,18 +191,19 @@ head(tempData.1975)
 
 - From “Office of Institutional Research and Assessment 1977 - 1978 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
-  - Table VI: Ethnic Composition of Undergraduate Students by
-    Matriculation Status, Senior and Community Colleges Expressed in
-    Percentages, Fall 1969, 1970, 1972, 1974, 1976, 1978, 1980 (p.111)
-  - Only proportions were reported in the report. The actual number of
-    students were interpolated from the total number of matriculated
-    students (see Table III: Trends In Undergraduate Enrollment by
-    Matriculant and Non-Degree Status, Fall 1971, 1976 and 1977 (p.103))
-  - The labeling of the following ethnicity levels have been modified.
-    - “Black” to “Black or African American”
-    - “American Indian” to “American Indian or Native Alaskan”
-    - “Oriental” to “Asian or Pacific Islander”
+  - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
+    - Table VI: Ethnic Composition of Undergraduate Students by
+      Matriculation Status, Senior and Community Colleges Expressed in
+      Percentages, Fall 1969, 1970, 1972, 1974, 1976, 1978, 1980 (p.111)
+    - Only proportions were reported in the report. The actual number of
+      students were interpolated from the total number of matriculated
+      students (see Table III: Trends In Undergraduate Enrollment by
+      Matriculant and Non-Degree Status, Fall 1971, 1976 and 1977
+      (p.103))
+    - The labeling of the following ethnicity levels have been modified.
+      - “Black” to “Black or African American”
+      - “American Indian” to “American Indian or Native Alaskan”
+      - “Oriental” to “Asian or Pacific Islander”
 
 ``` r
 tempData.1977 = read.csv("data/CUNY_OIRA2023StudentDataBookEnrollmentByDegreeAndEthnicity1977.csv", sep = ",")
@@ -228,19 +229,20 @@ head(tempData.1977)
 
 - From “Office of Institutional Research and Assessment 1980 - 1981 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
-  - Table IV: Ethnic Composition of Undergraduate Students by
-    Matriculation Status, Senior and Community Colleges Expressed in
-    Percentages, Fall 1969, 1970, 1972, 1974, 1976”, 1978, 1980 (p. 108)
-  - Only proportions were reported in the report. The actual number of
-    students were interpolated from the total number of matriculated
-    students (see Table III: Trends In Undergraduate Enrollment by
-    Matriculants and Non-Degree Status, Fall 1980, 1978, 1979, 1980
-    (p.100))
-  - The labeling of the following ethnicity levels have been modified.
-    - “Black” to “Black or African American”
-    - “American Indian” to “American Indian or Native Alaskan”
-    - “Oriental” to “Asian or Pacific Islander”
+  - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
+    - Table IV: Ethnic Composition of Undergraduate Students by
+      Matriculation Status, Senior and Community Colleges Expressed in
+      Percentages, Fall 1969, 1970, 1972, 1974, 1976”, 1978, 1980
+      (p. 108)
+    - Only proportions were reported in the report. The actual number of
+      students were interpolated from the total number of matriculated
+      students (see Table III: Trends In Undergraduate Enrollment by
+      Matriculants and Non-Degree Status, Fall 1980, 1978, 1979, 1980
+      (p.100))
+    - The labeling of the following ethnicity levels have been modified.
+      - “Black” to “Black or African American”
+      - “American Indian” to “American Indian or Native Alaskan”
+      - “Oriental” to “Asian or Pacific Islander”
 
 ``` r
 tempData.1980 = read.csv("data/CUNY_OIRA2023StudentDataBookEnrollmentByDegreeAndEthnicity1980.csv", sep = ",")
@@ -266,7 +268,7 @@ head(tempData.1980)
 
 - From “Office of Institutional Research and Assessment 1981 - 1982 Data
   Book”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
+  - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
   - Table IV: Ethnic Composition of Undergraduate Students by
     Matriculation Status, Senior and Community Colleges: Expressed In
     Percentages, Fall 1969, 1970, 1972, 1974, 19768, 1978, 1980 and 1981
@@ -307,13 +309,13 @@ head(tempData.1981)
 ## CUNY ethnicity data in 1992
 
 - From “CUNY Student Data Book Fall 1992”
-  - https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/
-  - Table 34. Trends in Enrollment by Race/Ethnicity of CUNY
-    Undergraduates: 1976 to 1992 (p.121)
-  - Only proportions were reported in the report. The actual number of
-    students were interpolated from the total number of matriculated
-    students (see Table 10B. Trends in Undergraduate Enrolment by
-    Colege: 1980 to 1992 (p.52))
+  - <https://www.cuny.edu/about/administration/offices/oira/institutional/data/student-data-book-archive/>
+    - Table 34. Trends in Enrollment by Race/Ethnicity of CUNY
+      Undergraduates: 1976 to 1992 (p.121)
+    - Only proportions were reported in the report. The actual number of
+      students were interpolated from the total number of matriculated
+      students (see Table 10B. Trends in Undergraduate Enrolment by
+      Colege: 1980 to 1992 (p.52))
 
 ``` r
 tempData.1992 = read.csv("data/CUNY_OIRA2023StudentDataBookEnrollmentByDegreeAndEthnicity1992.csv", sep = ",")
@@ -554,11 +556,11 @@ p <- ggplot(CUNY.diveristy.2y, aes(Year, Enrollment, group = Ethnicity)) +
 p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
   ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Community Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+  theme(plot.margin = unit(c(1,1,1,1), "cm")) +
   theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+<img src="files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -589,11 +591,11 @@ p <- ggplot(CUNY.diveristy.simplified.2y, aes(Year, Enrollment, group = Ethnicit
 p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
   ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Community Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+  theme(plot.margin = unit(c(1,1,1,1), "cm")) +
   theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
+<img src="files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -623,11 +625,11 @@ p <- ggplot(CUNY.diveristy.4y, aes(Year, Enrollment, group = Ethnicity)) +
 p + theme_hc() + scale_fill_identity() + # scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
   ggtitle(paste("Ethnicity of Matriculated Undergradutae Enrollments at CUNY Senior Colleges between 1967 and 2022\n(Data from CUNY's Office of Institutional Research)")) +
-  theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+  theme(plot.margin = unit(c(1,1,1,1), "cm")) +
   theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
+<img src="files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -724,11 +726,11 @@ p <- ggplot(tempData, aes(Year, Enrollment, group = Control)) +
 p + theme_hc() + scale_fill_identity() + # + scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
     ggtitle(paste("Modern Language Enrollments at CUNY by Control between 1958 and 2021\n(Data from MLA's Language Enrollment Database, 1958–2021)")) +
-    theme(plot.margin = unit(c(1.5,1.5,1.5,1.5), "cm")) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm")) +
     theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
+<img src="files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
@@ -756,11 +758,11 @@ p <- ggplot(tempData, aes(Year, Enrollment, group = Institution)) +
 p + theme_hc() + scale_fill_identity() + # + scale_colour_hc() +
   theme(axis.text.x = element_text(angle = 40, vjust = 0.8, hjust=1, size=8)) +
     ggtitle(paste("Modern Language Enrollments at CUNY Commmunity Colleges bet. 1958 and 2021\n(Data from MLA's Language Enrollment Database, 1958–2021)")) +
-    theme(plot.margin = unit(c(2,2,2,2), "cm")) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm")) +
     theme(axis.title.x = element_text(margin=margin(t=10)))
 ```
 
-<img src="RProcedureMLA2024CUNYMLEnrollmentAndDiversity_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
+<img src="files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />
 
 ``` r
 #  theme(legend.key.size = unit(1, 'cm'), #change legend key size
