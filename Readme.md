@@ -372,106 +372,6 @@ head(tempData.2022)
 # creating data tables
 tempData = bind_rows(tempData.1967, tempData.1969, tempData.1972, tempData.1975, tempData.1977, tempData.1980, tempData.1981, tempData.1992, tempData.2022)
 
-xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)[,,"Community"]
-```
-
-    ##                                    Year
-    ## Ethnicity                            1967  1968  1969  1971  1972  1973  1974  1975  1976  1977  1978  1980
-    ##   American Indian or Native Alaskan     0     0     0   144   220   179   198   137  1051   607   562  1326
-    ##   Asian or Pacific Islander             0     0     0   864   883  1075  1322  1103  1793  2023  1499   353
-    ##   Black or African American          2303  4885  6040 13972 17108 20195 20227 20767 20715 23945 17201 16756
-    ##   Hispanic                            948  1379  1555  4129  6180  8484  8790  9658 11068 11938  8905 10699
-    ##   No Response                         259   420  1244     0     0     0     0     0     0     0     0     0
-    ##   Other                               813   677   907   144  1103  2031  2644  3173     0     0     0     0
-    ##   White                             12906 16011 16176 28761 29691 27783 32919 34152 27208 28936 18701 15032
-    ##                                    Year
-    ## Ethnicity                            1981  1982  1984  1986  1988  1989  1990  1991  1992  1993  1994  1995
-    ##   American Indian or Native Alaskan   492   721   908   867   116   122   139   123   112   105   141   140
-    ##   Asian or Pacific Islander          1478  2060  2896  3180  4193  4580  5018  5631  5789  6174  7111  7249
-    ##   Black or African American         16843 19367 21527 20930 20620 22049 20620 21253 22109 23119 31089 29233
-    ##   Hispanic                          11064 13341 15393 16420 15960 16735 17198 17646 18206 19625 23628 23534
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             14917 16019 16074 16420 17299 17529 17702 17846 17499 17992 19290 17986
-    ##                                    Year
-    ## Ethnicity                            1996  1997  1998  1999  2000  2001  2002  2003  2004  2005  2006  2007
-    ##   American Indian or Native Alaskan   114   128   128   147   143   131   131   104   119   140   150   168
-    ##   Asian or Pacific Islander          7461  7590  8104  8399  8865  9094  9496  9779 10054 10380 11265 12194
-    ##   Black or African American         29201 27914 26951 26004 26067 26197 28185 28133 29431 29057 28789 28137
-    ##   Hispanic                          24694 23820 23215 22087 22180 22157 23523 23671 24705 25351 26193 27814
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             17391 16208 16248 15537 15469 15503 16973 17201 17719 17627 17769 18015
-    ##                                    Year
-    ## Ethnicity                            2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019
-    ##   American Indian or Native Alaskan   194   313   363   317   329   326   372   401   412   399   411   385
-    ##   Asian or Pacific Islander         13239 14405 14790 15357 15501 15588 16058 15922 15861 15530 15262 14688
-    ##   Black or African American         29366 31978 32120 33522 32185 32137 33007 32251 31017 30002 29445 28632
-    ##   Hispanic                          30048 33671 34927 37001 37126 38699 39569 39241 38707 38318 36516 33653
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             17713 18910 18268 18793 17707 16973 16775 15567 14839 14324 13956 12983
-    ##                                    Year
-    ## Ethnicity                            2020  2021  2022
-    ##   American Indian or Native Alaskan   373   333   278
-    ##   Asian or Pacific Islander         13570 11840 10358
-    ##   Black or African American         25790 23089 21162
-    ##   Hispanic                          29708 24793 21606
-    ##   No Response                           0     0     0
-    ##   Other                                 0     0     0
-    ##   White                             11520  9726  7995
-
-``` r
-xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)[,,"Senior"]
-```
-
-    ##                                    Year
-    ## Ethnicity                            1967  1968  1969  1971  1972  1973  1974  1975  1976  1977  1978  1980
-    ##   American Indian or Native Alaskan     0     0     0   181   296   428   455   355   918   964  1137   888
-    ##   Asian or Pacific Islander             0     0     0  1900  2374  2679  3419  3905  4684  4209  5378  5430
-    ##   Black or African American          2285  4712  6179 13216 15929 19293 24736 30413 23145 19820 27617 27549
-    ##   Hispanic                            975  1338  1872  4164  6727  8038 10486 11123 11939 10962 14895 15700
-    ##   No Response                         468   872  1934     0     0     0     0     0     0     0     0     0
-    ##   Other                              2268  1396  2371   452  2869  4287  6725  6863     0     0     0     0
-    ##   White                             56560 49797 50059 70607 70742 72458 68167 65678 51158 51744 54408 49174
-    ##                                    Year
-    ## Ethnicity                            1981  1982  1984  1986  1988  1989  1990  1991  1992  1993  1994  1995
-    ##   American Indian or Native Alaskan   975  1181  1135  1424   208   216   275   231   224   234   160   154
-    ##   Asian or Pacific Islander          6143  7304  7434  9870 12222 12568 12947 13281 13794 14341 12589 12473
-    ##   Black or African American         23891 27499 27671 28491 30086 31529 35438 34894 36143 36607 25718 25009
-    ##   Hispanic                          14822 16435 18172 17908 18281 19610 20701 20833 21791 23082 19854 19698
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             51684 54999 48837 44059 43562 44422 44127 42525 41114 40050 29930 29142
-    ##                                    Year
-    ## Ethnicity                            1996  1997  1998  1999  2000  2001  2002  2003  2004  2005  2006  2007
-    ##   American Indian or Native Alaskan   130   135   142   133   135   128   154   144   157   158   158   153
-    ##   Asian or Pacific Islander         12242 11905 11827 11860 12113 12807 13291 13984 14749 15580 16770 18200
-    ##   Black or African American         24859 24946 24185 23937 23135 23100 23255 23153 23628 23997 24443 25016
-    ##   Hispanic                          19440 19486 18816 18513 18340 18367 18781 19865 20934 21395 22394 23631
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             28498 28391 27494 27130 26581 27142 28335 29647 30052 30522 31128 32053
-    ##                                    Year
-    ## Ethnicity                            2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019
-    ##   American Indian or Native Alaskan   184   186   220   233   239   284   306   335   338   356   364   375
-    ##   Asian or Pacific Islander         19976 21370 22856 24769 26075 26961 28113 29460 30266 31155 32158 32497
-    ##   Black or African American         25242 25414 24678 25315 25034 24825 25444 26475 26608 26843 27164 27961
-    ##   Hispanic                          25456 26472 26664 27154 27685 28083 29514 30973 32271 34078 35471 35699
-    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
-    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
-    ##   White                             33324 34898 35651 37157 36825 35167 34631 32697 31156 30791 30222 29816
-    ##                                    Year
-    ## Ethnicity                            2020  2021  2022
-    ##   American Indian or Native Alaskan   371   394   363
-    ##   Asian or Pacific Islander         32913 31944 30764
-    ##   Black or African American         27878 26826 24833
-    ##   Hispanic                          35359 33819 31074
-    ##   No Response                           0     0     0
-    ##   Other                                 0     0     0
-    ##   White                             30280 28690 25786
-
-``` r
 xtabs(Enrollment ~ Year + Control, data=tempData)
 ```
 
@@ -528,6 +428,121 @@ xtabs(Enrollment ~ Year + Control, data=tempData)
     ##   2020     80961 126801
     ##   2021     69781 121673
     ##   2022     61399 112820
+
+``` r
+CUNYDiversityTable <- as.data.frame.matrix(xtabs(Enrollment ~ Year + Ethnicity, data=tempData))
+CUNYDiversityTable$MinorityRate <- rowSums(CUNYDiversityTable[,c("American Indian or Native Alaskan","Asian or Pacific Islander", "Black or African American", "Hispanic", "No Response", "Other")], na.rm=TRUE)/rowSums(CUNYDiversityTable)*100
+write.csv(CUNYDiversityTable, "RProcedureMLA2024CUNYMLEnrollmentAndDiversityCUNYDiversityData.csv")
+
+xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)[,,"Community"]
+```
+
+    ##                                    Year
+    ## Ethnicity                            1967  1968  1969  1971  1972  1973  1974  1975  1976  1977  1978  1980
+    ##   American Indian or Native Alaskan     0     0     0   144   220   179   198   137  1051   607   562  1326
+    ##   Asian or Pacific Islander             0     0     0   864   883  1075  1322  1103  1793  2023  1499   353
+    ##   Black or African American          2303  4885  6040 13972 17108 20195 20227 20767 20715 23945 17201 16756
+    ##   Hispanic                            948  1379  1555  4129  6180  8484  8790  9658 11068 11938  8905 10699
+    ##   No Response                         259   420  1244     0     0     0     0     0     0     0     0     0
+    ##   Other                               813   677   907   144  1103  2031  2644  3173     0     0     0     0
+    ##   White                             12906 16011 16176 28761 29691 27783 32919 34152 27208 28936 18701 15032
+    ##                                    Year
+    ## Ethnicity                            1981  1982  1984  1986  1988  1989  1990  1991  1992  1993  1994  1995
+    ##   American Indian or Native Alaskan   492   721   908   867   116   122   139   123   112   105   141   140
+    ##   Asian or Pacific Islander          1478  2060  2896  3180  4193  4580  5018  5631  5789  6174  7111  7249
+    ##   Black or African American         16843 19367 21527 20930 20620 22049 20620 21253 22109 23119 31089 29233
+    ##   Hispanic                          11064 13341 15393 16420 15960 16735 17198 17646 18206 19625 23628 23534
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             14917 16019 16074 16420 17299 17529 17702 17846 17499 17992 19290 17986
+    ##                                    Year
+    ## Ethnicity                            1996  1997  1998  1999  2000  2001  2002  2003  2004  2005  2006  2007
+    ##   American Indian or Native Alaskan   114   128   128   147   143   131   131   104   119   140   150   168
+    ##   Asian or Pacific Islander          7461  7590  8104  8399  8865  9094  9496  9779 10054 10380 11265 12194
+    ##   Black or African American         29201 27914 26951 26004 26067 26197 28185 28133 29431 29057 28789 28137
+    ##   Hispanic                          24694 23820 23215 22087 22180 22157 23523 23671 24705 25351 26193 27814
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             17391 16208 16248 15537 15469 15503 16973 17201 17719 17627 17769 18015
+    ##                                    Year
+    ## Ethnicity                            2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019
+    ##   American Indian or Native Alaskan   194   313   363   317   329   326   372   401   412   399   411   385
+    ##   Asian or Pacific Islander         13239 14405 14790 15357 15501 15588 16058 15922 15861 15530 15262 14688
+    ##   Black or African American         29366 31978 32120 33522 32185 32137 33007 32251 31017 30002 29445 28632
+    ##   Hispanic                          30048 33671 34927 37001 37126 38699 39569 39241 38707 38318 36516 33653
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             17713 18910 18268 18793 17707 16973 16775 15567 14839 14324 13956 12983
+    ##                                    Year
+    ## Ethnicity                            2020  2021  2022
+    ##   American Indian or Native Alaskan   373   333   278
+    ##   Asian or Pacific Islander         13570 11840 10358
+    ##   Black or African American         25790 23089 21162
+    ##   Hispanic                          29708 24793 21606
+    ##   No Response                           0     0     0
+    ##   Other                                 0     0     0
+    ##   White                             11520  9726  7995
+
+``` r
+CUNYDiversityTable.2y <- as.data.frame.matrix(xtabs(Enrollment ~ Year + Ethnicity + Control, data=tempData)[,,"Community"])
+CUNYDiversityTable.2y$MinorityRate <- rowSums(CUNYDiversityTable.2y[,c("American Indian or Native Alaskan","Asian or Pacific Islander", "Black or African American", "Hispanic", "No Response", "Other")], na.rm=TRUE)/rowSums(CUNYDiversityTable.2y)*100
+write.csv(CUNYDiversityTable.2y, "RProcedureMLA2024CUNYMLEnrollmentAndDiversityCUNYDiversityData2Y.csv")
+
+
+xtabs(Enrollment ~ Ethnicity + Year + Control, data=tempData)[,,"Senior"]
+```
+
+    ##                                    Year
+    ## Ethnicity                            1967  1968  1969  1971  1972  1973  1974  1975  1976  1977  1978  1980
+    ##   American Indian or Native Alaskan     0     0     0   181   296   428   455   355   918   964  1137   888
+    ##   Asian or Pacific Islander             0     0     0  1900  2374  2679  3419  3905  4684  4209  5378  5430
+    ##   Black or African American          2285  4712  6179 13216 15929 19293 24736 30413 23145 19820 27617 27549
+    ##   Hispanic                            975  1338  1872  4164  6727  8038 10486 11123 11939 10962 14895 15700
+    ##   No Response                         468   872  1934     0     0     0     0     0     0     0     0     0
+    ##   Other                              2268  1396  2371   452  2869  4287  6725  6863     0     0     0     0
+    ##   White                             56560 49797 50059 70607 70742 72458 68167 65678 51158 51744 54408 49174
+    ##                                    Year
+    ## Ethnicity                            1981  1982  1984  1986  1988  1989  1990  1991  1992  1993  1994  1995
+    ##   American Indian or Native Alaskan   975  1181  1135  1424   208   216   275   231   224   234   160   154
+    ##   Asian or Pacific Islander          6143  7304  7434  9870 12222 12568 12947 13281 13794 14341 12589 12473
+    ##   Black or African American         23891 27499 27671 28491 30086 31529 35438 34894 36143 36607 25718 25009
+    ##   Hispanic                          14822 16435 18172 17908 18281 19610 20701 20833 21791 23082 19854 19698
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             51684 54999 48837 44059 43562 44422 44127 42525 41114 40050 29930 29142
+    ##                                    Year
+    ## Ethnicity                            1996  1997  1998  1999  2000  2001  2002  2003  2004  2005  2006  2007
+    ##   American Indian or Native Alaskan   130   135   142   133   135   128   154   144   157   158   158   153
+    ##   Asian or Pacific Islander         12242 11905 11827 11860 12113 12807 13291 13984 14749 15580 16770 18200
+    ##   Black or African American         24859 24946 24185 23937 23135 23100 23255 23153 23628 23997 24443 25016
+    ##   Hispanic                          19440 19486 18816 18513 18340 18367 18781 19865 20934 21395 22394 23631
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             28498 28391 27494 27130 26581 27142 28335 29647 30052 30522 31128 32053
+    ##                                    Year
+    ## Ethnicity                            2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019
+    ##   American Indian or Native Alaskan   184   186   220   233   239   284   306   335   338   356   364   375
+    ##   Asian or Pacific Islander         19976 21370 22856 24769 26075 26961 28113 29460 30266 31155 32158 32497
+    ##   Black or African American         25242 25414 24678 25315 25034 24825 25444 26475 26608 26843 27164 27961
+    ##   Hispanic                          25456 26472 26664 27154 27685 28083 29514 30973 32271 34078 35471 35699
+    ##   No Response                           0     0     0     0     0     0     0     0     0     0     0     0
+    ##   Other                                 0     0     0     0     0     0     0     0     0     0     0     0
+    ##   White                             33324 34898 35651 37157 36825 35167 34631 32697 31156 30791 30222 29816
+    ##                                    Year
+    ## Ethnicity                            2020  2021  2022
+    ##   American Indian or Native Alaskan   371   394   363
+    ##   Asian or Pacific Islander         32913 31944 30764
+    ##   Black or African American         27878 26826 24833
+    ##   Hispanic                          35359 33819 31074
+    ##   No Response                           0     0     0
+    ##   Other                                 0     0     0
+    ##   White                             30280 28690 25786
+
+``` r
+CUNYDiversityTable.4y <- as.data.frame.matrix(xtabs(Enrollment ~ Year + Ethnicity + Control, data=tempData)[,,"Senior"])
+CUNYDiversityTable.4y$MinorityRate <- rowSums(CUNYDiversityTable.4y[,c("American Indian or Native Alaskan","Asian or Pacific Islander", "Black or African American", "Hispanic", "No Response", "Other")], na.rm=TRUE)/rowSums(CUNYDiversityTable.4y)*100
+write.csv(CUNYDiversityTable.4y, "RProcedureMLA2024CUNYMLEnrollmentAndDiversityCUNYDiversityData4Y.csv")
+```
 
 ### Plotting the data for community colleges
 
